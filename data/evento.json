@@ -1,0 +1,271 @@
+{
+  "evento": {
+    "nombre": "1er Congreso de Estudiantes de Administración",
+    "lema": "Emprendimiento, Innovación y Competitividad",
+    "fechas": "29 y 30 de octubre de 2026",
+    "sede": "ICEA · Edificio C",
+    "ubicacion": "Circuito La Concepción Km 2.5, Col. San Juan Tilcuautla, San Agustín Tlaxiaca, Hidalgo, México"
+  },
+  "programaGeneral": [
+    {
+      "id": "pg-2026-10-29-0800",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "08:00 - 09:00",
+      "actividad": "Registros de asistentes al congreso y entrega de kit.",
+      "tipo": "Actividad general"
+    },
+    {
+      "id": "pg-2026-10-29-0900",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "09:00 - 10:00",
+      "actividad": "Inauguración y mensaje de autoridades",
+      "tipo": "Actividad general"
+    },
+    {
+      "id": "pg-2026-10-29-1000",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "10:00 - 11:00",
+      "actividad": "Conferencia Magistral \"Emprender en tiempos de crisis: ¿utopía o posibilidad?\"",
+      "tipo": "Conferencia Magistral",
+      "ponente": "Dr. José Aramis Marín Pérez",
+      "detalle": "Profesor Investigador de la Université de Lorraine"
+    },
+    {
+      "id": "pg-2026-10-29-1100-pon",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "11:00 - 14:00",
+      "actividad": "Presentación de trabajos (ponencias)-Mesas de trabajo",
+      "tipo": "Ponencias"
+    },
+    {
+      "id": "pg-2026-10-29-1100-tal",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "11:00 - 14:00",
+      "actividad": "Talleres simultáneos",
+      "tipo": "Talleres"
+    },
+    {
+      "id": "pg-2026-10-29-1400",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "14:00 - 16:00",
+      "actividad": "Receso alimentos",
+      "tipo": "Actividad general"
+    },
+    {
+      "id": "pg-2026-10-29-1600",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "16:00 - 17:00",
+      "actividad": "Conferencia Magistral \"Sigue haciendo bien lo que haces y quebrarás tu negocio\"",
+      "tipo": "Conferencia Magistral",
+      "ponente": "MA. Raúl Macías",
+      "detalle": "Secretario General de la Universidad de Negocios de América Latina (BULA)"
+    },
+    {
+      "id": "pg-2026-10-29-1700-pon",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "17:00 - 19:00",
+      "actividad": "Presentación de trabajos (ponencias)-Mesas de trabajo",
+      "tipo": "Ponencias"
+    },
+    {
+      "id": "pg-2026-10-29-1700-tal",
+      "fecha": "2026-10-29",
+      "fechaTexto": "Jueves 29 de octubre 2026",
+      "horario": "17:00 - 20:00",
+      "actividad": "Talleres simultáneos",
+      "tipo": "Talleres"
+    },
+    {
+      "id": "pg-2026-10-30-1000-car",
+      "fecha": "2026-10-30",
+      "fechaTexto": "Viernes 30 de octubre 2026",
+      "horario": "10:00 - 13:00",
+      "actividad": "Presentación de trabajos (carteles)",
+      "tipo": "Carteles"
+    },
+    {
+      "id": "pg-2026-10-30-1000-tal",
+      "fecha": "2026-10-30",
+      "fechaTexto": "Viernes 30 de octubre 2026",
+      "horario": "10:00 - 13:00",
+      "actividad": "Talleres simultáneos",
+      "tipo": "Talleres"
+    },
+    {
+      "id": "pg-2026-10-30-1300",
+      "fecha": "2026-10-30",
+      "fechaTexto": "Viernes 30 de octubre 2026",
+      "horario": "13:00 - 14:00",
+      "actividad": "Premiación y Clausura",
+      "tipo": "Actividad general"
+    }
+  ],
+  "talleres": [
+    {
+      "id": "tal-01",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Emprender para transformar: emprendimiento social y Economía Social y Solidaria en Francia y México",
+      "instructor": "Dr. José Aramis Marín Pérez",
+      "lugar": "Aula 16, Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/qD4cay1SoCuCYBst6"
+    },
+    {
+      "id": "tal-02",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Modelos de negocio circulares",
+      "instructor": "Mtra. María Concepción García Pérez",
+      "lugar": "Aula de usos múltiples, Edif C",
+      "cupo": 15,
+      "registroUrl": "https://forms.gle/6AtC2gR4YyGeBAco8"
+    },
+    {
+      "id": "tal-03",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Co-creación de Valor para empresas",
+      "instructor": "Dra. María Guadalupe Montiel Hernández",
+      "lugar": "Aula 15, Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/77HMZsGu5jkQCuZL9"
+    },
+    {
+      "id": "tal-04",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Inteligencia Artificial en los negocios",
+      "instructor": "Mtro. Isaac David Alfaro Guerrero",
+      "lugar": "Centro de cómputo-ICEA; Aula 3",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/zsCbKjthxTHa1Hoi9"
+    },
+    {
+      "id": "tal-05",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Marketing digital",
+      "instructor": "Mtro. Erick Arturo Olvera Bautista",
+      "lugar": "Aula 14, Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/DRcGjpD1ZFHGLgM88"
+    },
+    {
+      "id": "tal-06",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Orange Data Mining sin programar",
+      "instructor": "Dra. Yessica García Hernández",
+      "lugar": "Centro de cómputo-ICEA; Aula 4",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/HJYb76GDcm3T8gYr8"
+    },
+    {
+      "id": "tal-07",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Generando ideas de negocio",
+      "instructor": "Mtra. Angélica Castillo Rojo",
+      "lugar": "Aula 1, Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/1asVnmDCkt3N7jVr9"
+    },
+    {
+      "id": "tal-08",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "17:00-19:00",
+      "titulo": "Graphext para principiantes",
+      "instructor": "Mtra. Melissa Areli Lucio Deanda",
+      "lugar": "Centro de cómputo-ICEA; Aula 4",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/rHmejrVKHuG3D57VA"
+    },
+    {
+      "id": "tal-09",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "17:00-19:00",
+      "titulo": "Agua virtual, lo que no vemos también se administra",
+      "instructor": "Dra. Bettsy Esmeralda Mujica Trejo",
+      "lugar": "Aula 14, Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/qCFWUMYZ9CBT5NXw5"
+    },
+    {
+      "id": "tal-10",
+      "fecha": "2026-10-29",
+      "fechaTexto": "29-oct",
+      "horario": "17:00-19:00",
+      "titulo": "Diseña una empresa turística sostenible con el modelo Canvas",
+      "instructor": "Mtra. Janeth Lohany Lorenzo Cordero",
+      "lugar": "Aula 16, Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/pJpsWxGxM4DXGvQ97"
+    },
+    {
+      "id": "tal-11",
+      "fecha": "2026-10-30",
+      "fechaTexto": "30-oct",
+      "horario": "10:00-12:00",
+      "titulo": "Nuevas miradas sobre el emprendimiento: paradigmas y tendencias internacionales",
+      "instructor": "Dr. José Aramis Marín Pérez",
+      "lugar": "Aula 16, Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/MqKoubFiUagLB48P6"
+    },
+    {
+      "id": "tal-12",
+      "fecha": "2026-10-30",
+      "fechaTexto": "30-oct",
+      "horario": "11:00-13:00",
+      "titulo": "El Arte de Resolver Problemas: Introducción a la Consultoría Empresarial",
+      "instructor": "Mtra. Maricela Pérez Pérez",
+      "lugar": "Aula 15 – Edif C",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/sSh5FgAAsk817Cvj6"
+    },
+    {
+      "id": "tal-13",
+      "fecha": "2026-10-30",
+      "fechaTexto": "30-oct",
+      "horario": "11:00-13:00",
+      "titulo": "Toma de decisiones basadas en datos",
+      "instructor": "Dra. María Dolores Martínez García",
+      "lugar": "Centro de cómputo-ICEA; Aula 4",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/t9QAyQ4uRgJPKbXWA"
+    },
+    {
+      "id": "tal-14",
+      "fecha": "2026-10-30",
+      "fechaTexto": "30-oct",
+      "horario": "11:00-13:00",
+      "titulo": "IA para la toma de decisiones",
+      "instructor": "Dra. Evelia López Meza",
+      "lugar": "Centro de cómputo-ICEA; Aula 3",
+      "cupo": 20,
+      "registroUrl": "https://forms.gle/gx9Lqux5rRC5MmJV8"
+    }
+  ],
+  "constancias": {
+    "disponibles": false,
+    "mensaje": "Las constancias se habilitarán en este sitio cuando sean liberadas por el comité organizador."
+  }
+}
