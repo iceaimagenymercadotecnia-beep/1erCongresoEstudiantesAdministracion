@@ -1,0 +1,17 @@
+/* Ajuste localizado de portada: 14 de octubre. No afecta datos ni navegación. */
+@media (min-width:901px){
+  .youth-identity{left:auto!important;right:30%!important;top:20px!important;width:clamp(280px,24vw,390px)!important;height:76px!important;max-width:30%!important;background:transparent!important;box-shadow:none!important;padding:0!important}
+  .youth-identity img{width:100%!important;height:100%!important;object-position:right center!important}
+  .youth-copy{left:clamp(26px,3vw,48px)!important;top:clamp(90px,12vh,125px)!important;width:66%!important;max-width:900px!important}
+  .youth-title h1{font-size:clamp(36px,3.25vw,57px)!important;line-height:1.04!important}
+  .youth-number{font-size:clamp(105px,8.4vw,146px)!important}
+  .youth-title{gap:clamp(12px,1.2vw,20px)!important}
+  .youth-student{right:7%!important;height:98%!important;max-width:40%!important;object-position:bottom center!important}
+}
+@media (min-width:901px) and (max-height:760px){
+  .youth-identity{top:12px!important;height:58px!important;width:300px!important}
+  .youth-copy{top:85px!important}
+  .youth-title h1{font-size:clamp(30px,3vw,46px)!important}
+  .youth-number{font-size:clamp(82px,7.4vw,115px)!important}
+  .youth-student{height:96%!important}
+}
