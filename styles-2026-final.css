@@ -187,3 +187,42 @@ main{height:100dvh!important;min-height:0!important;overflow-y:auto!important}
 .youth-dock img{height:100%!important;width:auto!important;max-width:30%!important;object-fit:contain!important}
 }
 @media(min-width:901px) and (max-height:760px){.youth-copy{top:94px!important}.youth-title h1{font-size:29px!important}.youth-number{font-size:80px!important}.youth-identity{height:65px!important}.youth-program{padding-bottom:82px!important}.youth-dock{height:62px!important}.youth-event{padding:10px!important}.youth-event h2{font-size:17px!important}}
+
+/* Ajuste final 14 octubre: jerarquía editorial sin rehacer las otras secciones. */
+@media (min-width:901px){
+ .layout{grid-template-columns:235px minmax(0,1fr)!important}
+ .sidebar{padding:28px 13px!important}
+ .side-label{font-size:13px!important;margin:0 8px 18px!important}
+ .sidebar nav a{font-size:19px!important;line-height:1.24!important;padding:14px 13px!important}
+ .home-screen:not([hidden]){grid-template-rows:minmax(0,56fr) minmax(0,44fr)!important}
+ .youth-hero{background:#112d4d!important}
+ .youth-wash{background:linear-gradient(90deg,rgba(9,23,43,.94) 0%,rgba(13,38,66,.88) 38%,rgba(15,47,76,.37) 72%,rgba(14,45,78,.08) 100%)!important}
+ .youth-hero:after{right:25%!important;width:8%!important;opacity:.65!important}
+ .youth-identity{top:23px!important;left:38px!important;width:390px!important;height:92px!important;max-width:42%!important;background:transparent!important;box-shadow:none!important;padding:0!important;border-radius:0!important}
+ .youth-identity img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:left center!important;filter:grayscale(1) brightness(0) invert(1)!important}
+ .youth-copy{left:38px!important;top:138px!important;width:70%!important;max-width:850px!important}
+ .youth-label{font-size:15px!important;letter-spacing:1.5px!important}
+ .youth-title{gap:17px!important;margin:13px 0!important}
+ .youth-number{font-size:clamp(90px,7.6vw,132px)!important}
+ .youth-title h1{font-size:clamp(29px,2.7vw,45px)!important;line-height:1.07!important}
+ .youth-topic{font-size:18px!important}.youth-tagline{font-size:16px!important}
+ .youth-student{height:87%!important;max-width:38%!important;right:2%!important}
+ .youth-program{grid-template-columns:155px minmax(0,1fr)!important;gap:17px!important;padding:23px 32px 115px!important;align-items:start!important}
+ .youth-program-heading{gap:9px!important;padding-top:8px!important}.youth-program-heading strong{font-size:26px!important}
+ .youth-events{gap:15px!important;align-self:start!important}
+ .youth-event{height:clamp(158px,23vh,205px)!important;min-height:0!important;padding:17px 18px!important;gap:9px!important;border-radius:14px!important}
+ .youth-event h2{font-size:clamp(18px,1.45vw,24px)!important;line-height:1.19!important}
+ .youth-event p{margin-top:auto!important;font-size:15px!important;line-height:1.35!important}
+ .youth-event-top{font-size:12px!important}
+ .youth-dock{left:calc(235px + 30px)!important;right:auto!important;bottom:13px!important;width:auto!important;max-width:calc(100% - 300px)!important;height:clamp(83px,11vh,108px)!important;padding:10px 28px 10px 15px!important;gap:clamp(22px,2.5vw,43px)!important;background:rgba(255,255,255,.96)!important;border-radius:20px!important;box-shadow:0 14px 36px #0008!important;overflow:visible!important}
+ .youth-dock img{width:auto!important;max-width:none!important;height:80%!important;object-fit:contain!important}
+ .youth-dock img:first-child{height:130%!important;max-height:128px!important;filter:drop-shadow(0 5px 7px #0002)!important}
+ .youth-dock img:nth-child(2){height:72%!important;max-width:210px!important}
+ .youth-dock img:nth-child(3){height:80%!important;max-width:110px!important}
+}
+@media (min-width:901px) and (max-height:760px){
+ .youth-identity{height:70px!important;width:310px!important;top:12px!important}
+ .youth-copy{top:96px!important}.youth-title h1{font-size:30px!important}.youth-number{font-size:86px!important}
+ .youth-program{padding-top:13px!important;padding-bottom:85px!important}.youth-event{height:145px!important;padding:11px!important}
+ .youth-event h2{font-size:17px!important}.youth-event p{font-size:12px!important}.youth-dock{height:70px!important}
+}
