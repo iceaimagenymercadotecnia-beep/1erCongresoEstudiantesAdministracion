@@ -119,3 +119,45 @@ main:has(.home-screen:not([hidden]))>footer{display:none}
 .general-item h3{font-size:20px;line-height:1.3;margin:0 0 8px}
 .general-item p{font-size:16px;margin:0}
 @media(max-width:700px){.general-item{grid-template-columns:1fr;gap:5px}.featured-grid{grid-template-columns:1fr}}
+
+/* PORTADA 2026 — composición editorial, sin banda superior ni cintilla inferior */
+@media (min-width: 901px){
+ body{overflow:hidden}
+ .layout{height:100dvh;min-height:0;grid-template-columns:clamp(238px,19vw,282px) minmax(0,1fr)}
+ .sidebar{height:100dvh;max-height:none;position:relative;background:#14161f;padding:35px 16px 22px;overflow-y:auto}
+ .side-label{font-size:14px;letter-spacing:1.6px;margin:10px 12px 25px;color:#b8c4d8}
+ .sidebar nav a{font-size:clamp(18px,1.38vw,21px);padding:16px 14px;border-radius:12px}
+ .sidebar nav a.active{background:#ed0066}
+ main{height:100dvh;min-height:0;overflow-y:auto}
+ main:has(.home-screen:not([hidden])){overflow:hidden}
+ .home-screen{height:100dvh;max-width:none;position:relative;display:grid;grid-template-rows:minmax(0,59fr) minmax(0,41fr);overflow:hidden;background:#11151c}
+ .home-screen[hidden]{display:none}
+}
+.youth-hero{position:relative;isolation:isolate;min-height:0;overflow:hidden;background:#142a43}
+.youth-building{position:absolute;inset:0;background-image:url('assets/edificio-c-icea-real.jpg');background-position:75% 37%;background-size:cover;z-index:-3}
+.youth-wash{position:absolute;inset:0;background:linear-gradient(90deg,#0e1626 0%,rgba(13,24,41,.98) 29%,rgba(11,34,60,.84) 49%,rgba(12,42,70,.28) 78%,rgba(8,31,54,.12) 100%),linear-gradient(0deg,rgba(8,18,30,.82),transparent 44%);z-index:-2}
+.youth-hero:after{content:'';position:absolute;right:25%;top:-25%;width:11%;height:160%;transform:rotate(18deg);background:#ed0066;opacity:.8;z-index:-1;pointer-events:none}
+.youth-identity{position:absolute;left:clamp(24px,3vw,55px);top:clamp(12px,2.1vh,26px);z-index:4;background:rgba(255,255,255,.94);border-radius:12px;padding:10px 16px;box-shadow:0 8px 30px #0002;max-width:39%}
+.youth-identity img{display:block;width:clamp(235px,25vw,395px);max-width:100%;height:clamp(44px,7vh,72px);object-fit:contain;object-position:left;filter:grayscale(1) brightness(.28)}
+.youth-copy{position:absolute;left:clamp(24px,3.3vw,60px);top:clamp(98px,15vh,156px);z-index:2;max-width:76%;color:#fff}
+.youth-label{font-size:clamp(13px,1.15vw,18px);font-weight:900;letter-spacing:1.6px;color:#e8f4ff}.youth-label span{color:#ff1681}
+.youth-title{display:flex;gap:clamp(10px,1.6vw,25px);align-items:center;margin:clamp(13px,2vh,24px) 0 10px;font-family:Montserrat,Arial,sans-serif}
+.youth-number{font-size:clamp(74px,8.5vw,145px);line-height:1;font-weight:950;letter-spacing:-8px;color:#ff0876}
+.youth-title h1{font-size:clamp(24px,3.1vw,53px);line-height:1.04;font-weight:950;letter-spacing:-1.6px;margin:0}
+.youth-title h1 em{font-style:normal;color:#ff0876}
+.youth-topic{font-size:clamp(15px,1.5vw,22px);font-weight:850;margin:12px 0 8px}.youth-topic span{color:#ff0876;margin:0 4px}
+.youth-tagline{font-size:clamp(14px,1.15vw,18px);margin:0;color:#e1ecf7}
+.youth-student{position:absolute;right:clamp(0px,3vw,55px);bottom:-3px;height:clamp(260px,80%,640px);max-width:42%;object-fit:contain;object-position:bottom right;filter:drop-shadow(-14px 12px 16px #07101b66);z-index:1;pointer-events:none}
+.youth-mark{position:absolute;right:3%;top:4%;color:#fff;background:#e60064;font-size:12px;font-weight:900;letter-spacing:1px;padding:9px 14px;transform:rotate(3deg)}.youth-mark span{font-size:17px}
+.youth-program{min-height:0;padding:clamp(12px,2.1vh,26px) clamp(24px,3.3vw,60px) clamp(75px,12vh,125px);display:grid;grid-template-columns:clamp(140px,17%,240px) minmax(0,1fr);gap:clamp(15px,2vw,34px);background:linear-gradient(135deg,#14151d,#191b29);color:#fff}
+.youth-program-heading{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding-top:12px}.youth-program-heading span{font-size:12px;font-weight:900;letter-spacing:1.5px;color:#ff2188}.youth-program-heading strong{font-size:clamp(20px,2vw,31px);line-height:1.1;font-weight:950}.youth-program-heading a{font-size:clamp(13px,1vw,16px);font-weight:800;color:#fff;border-bottom:2px solid #fa0a76;padding-bottom:5px;margin-top:8px}
+.youth-events{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.4vw,22px);min-height:0}
+.youth-event{min-width:0;background:#252735;border:1px solid #474656;border-radius:15px;padding:clamp(13px,1.5vw,24px);display:flex;flex-direction:column;gap:clamp(8px,1vh,13px);overflow:hidden}
+.youth-event.youth-forum{background:linear-gradient(135deg,#ec0066,#a90053);border-color:#f55ca1}
+.youth-event-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px;color:#ff85b9;font-weight:900;font-size:clamp(10px,.78vw,12px);letter-spacing:.8px}.youth-forum .youth-event-top{color:#fff}
+.youth-event h2{font-size:clamp(16px,1.43vw,23px);line-height:1.18;margin:0;font-weight:900;overflow-wrap:anywhere}.youth-event p{font-size:clamp(12px,1vw,15px);line-height:1.32;color:#e3e4ed;margin:auto 0 0}.youth-forum p{color:#fff}
+.youth-dock{position:absolute;bottom:clamp(8px,1.6vh,18px);right:clamp(22px,3.3vw,60px);z-index:5;display:flex;align-items:center;justify-content:center;gap:clamp(18px,2.8vw,44px);padding:clamp(7px,1vh,12px) clamp(20px,2.5vw,38px);height:clamp(64px,10vh,96px);background:#fff;border-radius:18px;box-shadow:0 14px 40px #0008;max-width:75%}
+.youth-dock img{display:block;width:auto;height:100%;max-width:clamp(110px,13vw,205px);object-fit:contain}
+@media (min-width:901px) and (max-height:750px){.youth-copy{top:clamp(75px,13vh,115px)}.youth-title h1{font-size:clamp(22px,2.8vw,42px)}.youth-number{font-size:clamp(60px,7vw,105px)}.youth-program{padding-bottom:65px}.youth-program-heading{gap:5px}.youth-event{gap:5px;padding:12px}.youth-dock{height:57px}}
+@media (max-width:900px){body{overflow:auto}.layout{display:block;height:auto}.sidebar{position:relative;height:auto;max-height:none}.sidebar nav{flex-direction:row;overflow-x:auto}.sidebar nav a{font-size:16px;white-space:nowrap}main{height:auto;overflow:visible}.home-screen{height:auto;min-height:calc(100dvh - 100px);display:block;overflow:visible}.youth-hero{height:590px}.youth-identity{max-width:65%}.youth-copy{top:125px;max-width:86%}.youth-student{height:60%;max-width:50%;right:0}.youth-title h1{font-size:clamp(23px,4vw,37px)}.youth-number{font-size:clamp(65px,9vw,110px)}.youth-program{display:block;padding:25px 22px 120px}.youth-program-heading{margin-bottom:20px}.youth-events{grid-template-columns:repeat(3,minmax(0,1fr))}.youth-dock{bottom:12px;right:15px;left:15px;max-width:none;height:85px}}
+@media (max-width:620px){.youth-hero{height:610px}.youth-identity{max-width:86%;left:16px;top:14px}.youth-identity img{width:270px;height:53px}.youth-copy{left:18px;top:110px;max-width:95%}.youth-title{gap:7px}.youth-title h1{font-size:clamp(18px,5vw,28px)}.youth-number{font-size:60px;letter-spacing:-5px}.youth-topic{font-size:14px}.youth-tagline{font-size:14px;max-width:65%}.youth-student{height:52%;max-width:75%}.youth-mark{display:none}.youth-events{grid-template-columns:1fr}.youth-event h2{font-size:21px}.youth-event p{font-size:15px}.youth-dock{gap:10px;padding:8px 14px}.youth-dock img{max-width:30%}}
