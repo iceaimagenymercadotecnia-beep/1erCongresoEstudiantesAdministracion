@@ -1,15 +1,7 @@
 # 1er Congreso de Estudiantes de Administración
-Sitio reconstruido desde cero para GitHub Pages.
 
-## Publicación
-Sube **el contenido** de esta carpeta a la raíz del repositorio (no la carpeta contenedora). GitHub Pages debe usar `main` y `/ (root)`.
+Sitio estático para GitHub Pages. Subir el CONTENIDO de esta carpeta a la raíz del repositorio.
 
-## Estructura
-- `index.html`: estructura del sitio.
-- `styles.css`: diseño responsive.
-- `app.js`: navegación, filtros, talleres y Mi Agenda.
-- `data/evento.json`: fuente única de programa, talleres y estado de constancias.
-- `assets/`: únicamente recursos oficiales proporcionados.
+Fuente única de programa: `data/evento.json`, extraída de los cuatro documentos definitivos recibidos. Los archivos Word/PDF no se publican. Talleres conservan enlaces de inscripción individuales. Las actividades generales simultáneas se conservan tal cual aparecen en el documento.
 
-## Criterios
-No contiene convocatoria ni recepción de trabajos. No usa PDFs como navegación. Los talleres conservan sus enlaces individuales de registro. No se inventaron logos, fotografías ni acreditaciones.
+Mi Agenda se guarda localmente en el navegador. Constancias queda pendiente de datos oficiales.
