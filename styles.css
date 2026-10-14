@@ -89,3 +89,6 @@ body{font-size:19px;line-height:1.55}
 .sidebar nav a{font-size:19px;padding:20px 17px}
 @media(max-width:1100px){.hero{grid-template-columns:1fr}.hero-image{min-height:510px}.student{height:93%}.institution-logo img{max-width:65vw}}
 @media(max-width:800px){.hero-image{min-height:430px}.bubble-a{width:32%!important}.bubble-b{width:25%!important}.bubble-c{width:20%!important}.sidebar nav a{font-size:15px;padding:13px 15px}.institution-logo img{width:min(66vw,420px);height:80px}}
+
+/* Ajustes específicos de ubicación y aniversario */
+.sidebar{display:flex;flex-direction:column}.sidebar nav{flex:0 0 auto}.sidebar-anniversary{margin-top:auto;padding:32px 18px 24px;display:flex;justify-content:center;align-items:center}.sidebar-anniversary img{width:145px;max-width:100%;height:auto;object-fit:contain}.poster-location{background:#fff1f5;border-left:5px solid var(--red);border-radius:9px;padding:20px 24px;margin:26px 0}.poster-location-heading{font-size:20px;font-weight:900;color:var(--deep)}.poster-location p{margin:8px 0 0!important;padding:0!important;border:0!important;background:none!important;font-size:19px!important;color:var(--ink)}@media(max-width:800px){.sidebar-anniversary{display:none}}
