@@ -104,3 +104,21 @@
  .youth-dock img:nth-child(2){height:62px!important}
  .youth-dock img:nth-child(3){height:65px!important}
 }
+
+/* ÚNICO AJUSTE: logotipos institucionales; no altera tarjetas ni datos */
+@media (min-width:901px){
+ .youth-identity{right:2.8%!important;top:4.3%!important;width:clamp(410px,30vw,550px)!important;max-width:35%!important;height:clamp(90px,11vh,120px)!important;z-index:9!important}
+ .youth-student{right:33%!important;max-width:31%!important}
+ .youth-dock{left:auto!important;right:clamp(18px,2.3vw,44px)!important;bottom:clamp(12px,2vh,22px)!important;max-width:70%!important;height:clamp(128px,17vh,170px)!important;gap:clamp(14px,1.3vw,23px)!important;align-items:flex-end!important}
+ .youth-dock img{flex-shrink:0!important;transform:none!important}
+ .youth-dock img:first-child{height:clamp(91px,11.8vh,123px)!important;max-width:245px!important;transform:none!important;padding:12px 14px!important}
+ .youth-dock img:nth-child(2){height:clamp(100px,12.4vh,132px)!important;max-width:140px!important;transform:none!important;padding:9px!important}
+ .youth-dock img:nth-child(3){height:clamp(155px,19vh,198px)!important;max-height:none!important;max-width:240px!important;transform:translateY(-5px)!important;padding:8px!important;box-shadow:0 13px 26px #0009!important}
+}
+@media (min-width:901px) and (max-height:760px){
+ .youth-identity{height:80px!important;width:clamp(350px,26vw,460px)!important}
+ .youth-dock{height:110px!important;bottom:8px!important}
+ .youth-dock img:first-child{height:83px!important}
+ .youth-dock img:nth-child(2){height:90px!important}
+ .youth-dock img:nth-child(3){height:125px!important}
+}
