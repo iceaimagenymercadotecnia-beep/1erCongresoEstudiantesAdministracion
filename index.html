@@ -1,4 +1,14 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#c51a4d"><title>1er Congreso de Estudiantes de Administración | UAEH · ICEA</title><link rel="stylesheet" href="styles-2026-final.css?v=1410b"><link rel="stylesheet" href="portada-audio-final.css?v=1510-logos2"></head><body>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#c51a4d"><title>1er Congreso de Estudiantes de Administración | UAEH · ICEA</title><link rel="stylesheet" href="styles-2026-final.css?v=1410b"><link rel="stylesheet" href="portada-audio-final.css?v=1510-logos2"><style>
+#cartel-mesas-nav[hidden]{display:none!important}
+.cartel-mesas-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0 22px}
+.cartel-mesa-btn{font:inherit;cursor:pointer;text-align:left;background:#fff;border:2px solid #e60068;border-radius:14px;padding:21px 22px;color:#17141a;transition:background .15s,color .15s,transform .15s}
+.cartel-mesa-btn:hover{transform:translateY(-2px);background:#fff1f7}
+.cartel-mesa-btn.active{background:#e60068;color:#fff;box-shadow:0 8px 20px rgba(230,0,104,.17)}
+.cartel-mesa-btn strong{display:block;font-size:clamp(21px,2vw,28px);font-weight:850;margin-bottom:7px}
+.cartel-mesa-btn span{font-size:17px;font-weight:750;display:block}
+.cartel-mesa-btn small{display:block;font-size:13px;margin-top:6px;opacity:.82}
+@media(max-width:720px){.cartel-mesas-nav{grid-template-columns:1fr;gap:9px}.cartel-mesa-btn{padding:14px 18px}}
+</style></head><body>
 
 <div class="layout"><aside class="sidebar" aria-label="Navegación del congreso"><div class="side-label">EXPLORA EL CONGRESO</div><nav id="side-nav"><a href="#inicio" data-view="inicio"><span>Inicio</span></a><a href="#ponencias" data-view="ponencias"><span>Ponencias</span></a><a href="#carteles" data-view="carteles"><span>Carteles científicos</span></a><a href="#talleres" data-view="talleres"><span>Talleres</span></a><a href="#agenda" data-view="agenda"><span>Mi Agenda <i id="count">0</i></span></a><a href="#constancias" data-view="constancias"><span>Constancias</span></a></nav></aside>
 <main id="main-content"><section class="page home-screen" data-page="inicio" aria-label="Inicio del Congreso">
@@ -30,7 +40,7 @@
 <h2 class="program-subtitle">Foro y conferencias magistrales</h2><div id="featured" class="featured-grid"></div>
 <h2 class="program-subtitle">Actividades por día</h2><div class="program-days"><button class="day active" data-general-day="2026-10-29">29 de octubre</button><button class="day" data-general-day="2026-10-30">30 de octubre</button></div>
 <div id="general-results" class="general-results"></div></section>
-<section class="page inner" data-page="programa" hidden><div class="section-eyebrow" id="category-eyebrow">PROGRAMA ACADÉMICO</div><h1 id="category-title">Ponencias</h1><p id="category-desc" class="section-intro"></p><div id="poster-location" class="poster-location" hidden><div class="poster-location-heading">Sede de los carteles científicos</div><p id="poster-location-detail" hidden></p></div><div class="filters"><label>Buscar en esta sección<input id="search" type="search" placeholder="Título, autor, folio, tema…"></label><label>Fecha<select id="day"><option value="">Ambos días</option><option value="2026-10-29">29 de octubre</option><option value="2026-10-30">30 de octubre</option></select></label><label id="mesa-label">Mesa temática<select id="mesa"><option value="">Todas las mesas</option></select></label></div><p class="result-count" id="result-line"></p><div id="results"></div></section>
+<section class="page inner" data-page="programa" hidden><div class="section-eyebrow" id="category-eyebrow">PROGRAMA ACADÉMICO</div><h1 id="category-title">Ponencias</h1><p id="category-desc" class="section-intro"></p><div id="poster-location" class="poster-location" hidden><div class="poster-location-heading">Sede de los carteles científicos</div><p id="poster-location-detail" hidden></p></div><div id="cartel-mesas-nav" class="cartel-mesas-nav" hidden></div><div class="filters"><label>Buscar en esta sección<input id="search" type="search" placeholder="Título, autor, folio, tema…"></label><label id="day-label">Fecha<select id="day"><option value="">Ambos días</option><option value="2026-10-29">29 de octubre</option><option value="2026-10-30">30 de octubre</option></select></label><label id="mesa-label">Mesa temática<select id="mesa"><option value="">Todas las mesas</option></select></label></div><p class="result-count" id="result-line"></p><div id="results"></div></section>
 <section class="page inner" data-page="agenda" hidden><div class="section-eyebrow">ORGANIZA TU VISITA</div><h1>Mi Agenda <span id="agenda-count"></span></h1><p class="section-intro">Guarda las actividades que te interesan. Tu selección permanece en este navegador.</p><div id="agenda-results"></div></section>
 <section class="page inner" data-page="constancias" hidden><div class="section-eyebrow">INFORMACIÓN PARA PARTICIPANTES</div><h1>Constancias</h1><p class="section-intro">Este apartado se habilitará cuando se proporcione la información oficial para su consulta.</p></section>
 <footer><strong>1er Congreso de Estudiantes de Administración</strong><span>“Emprendimiento, Innovación y Competitividad”</span></footer></main></div>
@@ -69,5 +79,5 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',abrirUnaVez);else abrirUnaVez();
 })();
 </script>
-<script src="app.js?v=1510-carteles-horarios" defer></script>
+<script src="app.js?v=1610-mesas-grandes" defer></script>
 </body></html>
