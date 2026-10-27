@@ -40,10 +40,22 @@
 <h2 class="program-subtitle">Foro y conferencias magistrales</h2><div id="featured" class="featured-grid"></div>
 <h2 class="program-subtitle">Actividades por día</h2><div class="program-days"><button class="day active" data-general-day="2026-10-29">29 de octubre</button><button class="day" data-general-day="2026-10-30">30 de octubre</button></div>
 <div id="general-results" class="general-results"></div></section>
-<section class="page inner" data-page="programa" hidden><div class="section-eyebrow" id="category-eyebrow">PROGRAMA ACADÉMICO</div><h1 id="category-title">Ponencias</h1><p id="category-desc" class="section-intro"></p><div id="poster-location" class="poster-location" hidden><div class="poster-location-heading">Sede de los carteles científicos</div><p id="poster-location-detail" hidden></p></div><div id="cartel-mesas-nav" class="cartel-mesas-nav" hidden></div><div class="filters"><label>Buscar en esta sección<input id="search" type="search" placeholder="Título, autor, folio, tema…"></label><label id="day-label">Fecha<select id="day"><option value="">Ambos días</option><option value="2026-10-29">29 de octubre</option><option value="2026-10-30">30 de octubre</option></select></label><label id="mesa-label">Mesa temática<select id="mesa"><option value="">Todas las mesas</option></select></label></div><p class="result-count" id="result-line"></p><div id="results"></div></section>
+<section class="page inner" data-page="programa" hidden><div class="section-eyebrow" id="category-eyebrow">PROGRAMA ACADÉMICO</div><h1 id="category-title">Ponencias</h1><p id="category-desc" class="section-intro"></p><div id="poster-location" class="poster-location" hidden><div class="poster-location-heading">Sede de los carteles científicos</div><p id="poster-location-detail" hidden></p></div><div id="cartel-mesas-nav" class="cartel-mesas-nav" hidden></div><div id="workshop-capacity-banner" hidden role="status">CUPO LLENO <span>Inscripciones cerradas en los 14 talleres</span></div><div class="filters"><label>Buscar en esta sección<input id="search" type="search" placeholder="Título, autor, folio, tema…"></label><label id="day-label">Fecha<select id="day"><option value="">Ambos días</option><option value="2026-10-29">29 de octubre</option><option value="2026-10-30">30 de octubre</option></select></label><label id="mesa-label">Mesa temática<select id="mesa"><option value="">Todas las mesas</option></select></label></div><p class="result-count" id="result-line"></p><div id="results"></div></section>
 <section class="page inner" data-page="agenda" hidden><div class="section-eyebrow">ORGANIZA TU VISITA</div><h1>Mi Agenda <span id="agenda-count"></span></h1><p class="section-intro">Guarda las actividades que te interesan. Tu selección permanece en este navegador.</p><div id="agenda-results"></div></section>
 <section class="page inner" data-page="constancias" hidden><div class="section-eyebrow">INFORMACIÓN PARA PARTICIPANTES</div><h1>Constancias</h1><p class="section-intro">Este apartado se habilitará cuando se proporcione la información oficial para su consulta.</p></section>
 <footer><strong>1er Congreso de Estudiantes de Administración</strong><span>“Emprendimiento, Innovación y Competitividad”</span></footer></main></div>
 <dialog id="detail"><button id="close" aria-label="Cerrar" class="close">×</button><div id="detail-body"></div></dialog>
+<style>
+#workshop-capacity-banner[hidden]{display:none!important}
+#workshop-capacity-banner{background:#e60063;color:#fff;border-radius:15px;padding:23px 28px;text-align:center;font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:.035em;margin:18px 0 24px;box-shadow:0 7px 20px #e6006320}
+#workshop-capacity-banner span{display:block;font-size:clamp(14px,1.5vw,17px);font-weight:600;letter-spacing:0;margin-top:5px}
+.workshop-activity{grid-template-columns:minmax(105px,150px) minmax(0,1fr)!important}
+.workshop-roster{margin-top:16px;border:1px solid #e9dce3;border-radius:10px;overflow:hidden;max-width:860px}
+.workshop-roster summary{padding:13px 16px;background:#fff5f9;color:#b90050;font-size:16px;font-weight:800;cursor:pointer}
+.workshop-roster summary:hover{background:#ffe8f2}
+.workshop-roster-list{columns:2;column-gap:30px;margin:0;padding:18px 25px 18px 45px;background:white}
+.workshop-roster-list li{break-inside:avoid;padding:5px 0;font-size:14px;line-height:1.4}
+@media(max-width:650px){.workshop-activity{grid-template-columns:1fr!important}.workshop-roster-list{columns:1}}
+</style>
 <script src="app.js?v=1610-mesas-grandes" defer></script>
-<script src="inscritos-talleres.js?v=27oct" defer></script></body></html>
+</body></html>
