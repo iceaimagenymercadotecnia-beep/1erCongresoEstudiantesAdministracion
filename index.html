@@ -8,7 +8,46 @@
 .cartel-mesa-btn span{font-size:17px;font-weight:750;display:block}
 .cartel-mesa-btn small{display:block;font-size:13px;margin-top:6px;opacity:.82}
 @media(max-width:720px){.cartel-mesas-nav{grid-template-columns:1fr;gap:9px}.cartel-mesa-btn{padding:14px 18px}}
-</style></head><body>
+</style><style id="icea-responsive-home-fix">
+/* Portada adaptable: evita recortar las tarjetas en iPad y pantallas medianas. */
+@media (max-width: 1366px) {
+ html, body {height:auto!important;min-height:100%!important;overflow-x:hidden!important;overflow-y:auto!important}
+ .layout {height:auto!important;min-height:100dvh!important}
+ main:has(.home-screen:not([hidden])) {height:auto!important;min-height:100dvh!important;overflow:visible!important}
+ .home-screen:not([hidden]) {height:auto!important;min-height:100dvh!important;display:flex!important;flex-direction:column!important;grid-template-rows:none!important;overflow:visible!important}
+ .youth-hero {flex:0 0 auto!important;height:clamp(380px,52vh,600px)!important;min-height:380px!important}
+ .youth-program {display:block!important;flex:0 0 auto!important;height:auto!important;min-height:0!important;padding:25px 28px 30px!important;overflow:visible!important}
+ .youth-program-heading {display:flex!important;flex-direction:row!important;align-items:center!important;flex-wrap:wrap!important;gap:14px!important;margin:0 0 18px!important;padding:0!important}
+ .youth-program-heading strong {font-size:clamp(22px,2.4vw,30px)!important}
+ .youth-program-heading a {white-space:normal!important;min-height:44px!important}
+ .youth-events {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:13px!important;align-items:stretch!important}
+ .youth-event {height:auto!important;min-height:190px!important;max-height:none!important;overflow:visible!important;padding:17px!important;gap:10px!important}
+ .youth-event h2 {font-size:clamp(17px,1.8vw,23px)!important;line-height:1.2!important;overflow-wrap:anywhere!important}
+ .youth-event p {font-size:clamp(13px,1.3vw,16px)!important;line-height:1.35!important;margin-top:auto!important;overflow-wrap:anywhere!important}
+ .youth-dock {position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:min(100%,620px)!important;max-width:100%!important;height:auto!important;min-height:100px!important;margin:20px auto 0!important;padding:12px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:20px!important;overflow:visible!important}
+ .youth-dock img,.youth-dock img:first-child,.youth-dock img:nth-child(2),.youth-dock img:nth-child(3) {height:auto!important;max-height:90px!important;max-width:30%!important;width:auto!important;transform:none!important;object-fit:contain!important;flex:0 1 auto!important}
+}
+@media (max-width: 760px) {
+ .youth-hero {height:470px!important;min-height:470px!important}
+ .youth-program {padding:22px 16px 28px!important}
+ .youth-program-heading {align-items:flex-start!important;flex-direction:column!important}
+ .youth-events {grid-template-columns:1fr!important}
+ .youth-event {min-height:0!important;padding:18px!important}
+ .youth-dock {min-height:85px!important;gap:10px!important}
+ .youth-dock img,.youth-dock img:first-child,.youth-dock img:nth-child(2),.youth-dock img:nth-child(3) {max-height:75px!important}
+}
+</style><style id="icea-attendance-style">
+.icea-attendance-wrap{padding:18px 26px;background:#fff;flex:0 0 auto;box-sizing:border-box}
+.icea-attendance-button{display:flex;align-items:center;justify-content:center;gap:18px;width:100%;box-sizing:border-box;min-height:92px;padding:18px 24px;border-radius:16px;background:#e60063;color:#fff!important;text-decoration:none!important;box-shadow:0 7px 22px rgba(184,0,80,.2);transition:transform .18s ease,box-shadow .18s ease}
+.icea-attendance-button:hover,.icea-attendance-button:focus-visible{transform:translateY(-2px);box-shadow:0 10px 25px rgba(184,0,80,.28)}
+.icea-attendance-copy{display:flex;flex-direction:column;gap:4px;text-align:left}
+.icea-attendance-copy strong{font-size:clamp(20px,2.4vw,30px);line-height:1.14;letter-spacing:.01em;font-weight:900;color:#fff}
+.icea-attendance-copy small{font-size:clamp(12px,1.2vw,15px);line-height:1.4;font-weight:600;color:#fff}
+.icea-attendance-icon{display:grid;place-items:center;flex:none;width:46px;height:46px;border:2px solid rgba(255,255,255,.85);border-radius:50%;font-size:26px;font-weight:800}
+.icea-attendance-arrow{font-size:29px;line-height:1;margin-left:8px;color:#fff}
+@media(max-width:760px){.icea-attendance-wrap{padding:14px 16px}.icea-attendance-button{min-height:82px;padding:14px 12px;gap:10px;border-radius:12px}.icea-attendance-icon{width:36px;height:36px;font-size:20px}.icea-attendance-arrow{font-size:21px;margin-left:0}.icea-attendance-copy strong{font-size:clamp(17px,4.5vw,23px)}}
+</style>
+</head><body>
 
 <div class="layout"><aside class="sidebar" aria-label="Navegación del congreso"><div class="side-label">EXPLORA EL CONGRESO</div><nav id="side-nav"><a href="#inicio" data-view="inicio"><span>Inicio</span></a><a href="#ponencias" data-view="ponencias"><span>Ponencias</span></a><a href="#carteles" data-view="carteles"><span>Carteles científicos</span></a><a href="#talleres" data-view="talleres"><span>Talleres</span></a><a href="#agenda" data-view="agenda"><span>Mi Agenda <i id="count">0</i></span></a><a href="#constancias" data-view="constancias"><span>Constancias</span></a></nav></aside>
 <main id="main-content"><section class="page home-screen" data-page="inicio" aria-label="Inicio del Congreso">
@@ -25,6 +64,7 @@
  <img class="youth-student" src="assets/estudiante-lona-oficial.png" alt="Estudiante del material gráfico oficial del Congreso">
  <div class="youth-mark">IDEAS EN MOVIMIENTO <span>↗</span></div>
 </div>
+<div class="icea-attendance-wrap"><a class="icea-attendance-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdUa-ZqTZsZaBua6PQk2RC7_q7u9i8wxtrY0pk4YnBVY-DJlg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" aria-label="Registrar asistencia a las actividades del Congreso"><span class="icea-attendance-icon" aria-hidden="true">✓</span><span class="icea-attendance-copy"><strong>REGISTRA TU ASISTENCIA</strong><small>Actividades del Congreso · 29 y 30 de octubre</small></span><span class="icea-attendance-arrow" aria-hidden="true">↗</span></a></div>
 <div class="youth-program" aria-label="Actividades destacadas del Congreso">
  <div class="youth-program-heading"><span>NO TE LO PIERDAS</span><strong>EN EL ESCENARIO</strong><a href="#programa">EXPLORAR PROGRAMA <span aria-hidden="true">↗</span></a></div>
  <div class="youth-events">
@@ -49,8 +89,13 @@
 #workshop-capacity-banner[hidden]{display:none!important}
 #workshop-capacity-banner{background:#e60063;color:#fff;border-radius:15px;padding:23px 28px;text-align:center;font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:.035em;margin:18px 0 24px;box-shadow:0 7px 20px #e6006320}
 #workshop-capacity-banner span{display:block;font-size:clamp(14px,1.5vw,17px);font-weight:600;letter-spacing:0;margin-top:5px}
-
+.workshop-activity{grid-template-columns:minmax(105px,150px) minmax(0,1fr)!important}
+.workshop-roster{margin-top:16px;border:1px solid #e9dce3;border-radius:10px;overflow:hidden;max-width:860px}
+.workshop-roster summary{padding:13px 16px;background:#fff5f9;color:#b90050;font-size:16px;font-weight:800;cursor:pointer}
+.workshop-roster summary:hover{background:#ffe8f2}
+.workshop-roster-list{columns:2;column-gap:30px;margin:0;padding:18px 25px 18px 45px;background:white}
+.workshop-roster-list li{break-inside:avoid;padding:5px 0;font-size:14px;line-height:1.4}
+@media(max-width:650px){.workshop-activity{grid-template-columns:1fr!important}.workshop-roster-list{columns:1}}
 </style>
-<script src="inscritos-talleres.js?v=27oct-restored" defer></script>
 <script src="app.js?v=1610-mesas-grandes" defer></script>
 </body></html>
