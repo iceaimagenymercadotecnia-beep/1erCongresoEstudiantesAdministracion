@@ -36,6 +36,24 @@
 .youth-student{height:107%!important;max-width:38%!important;object-fit:contain!important;object-position:bottom center!important}
 }
 </style>
+
+<style id="icea-layout-y-contador-28oct">
+/* Ajuste acotado: permitir que las actividades y los logos ocupen su propio espacio. */
+.home-screen:not([hidden]){height:auto!important;min-height:100dvh!important;grid-template-rows:minmax(460px,62vh) auto!important;overflow:visible!important}
+.youth-hero{height:auto!important;min-height:460px!important}
+.youth-program{display:grid!important;grid-template-columns:clamp(180px,17%,245px) minmax(0,1fr)!important;grid-template-rows:auto auto auto!important;gap:16px 22px!important;padding:20px clamp(20px,2.2vw,40px) 22px!important;overflow:visible!important;align-items:start!important}
+.youth-program>.icea-attendance-wrap{grid-column:1/-1!important;grid-row:1!important;justify-self:center!important;align-self:stretch!important;position:relative!important;z-index:1!important;margin:0!important;padding:0!important;min-height:0!important;background:transparent!important}
+.youth-program>.icea-attendance-wrap>.icea-attendance-button{height:auto!important;min-height:64px!important;max-height:none!important}
+.youth-program>.youth-program-heading{grid-column:1!important;grid-row:2!important}
+.youth-program>.youth-events{grid-column:2!important;grid-row:2!important;min-width:0!important}
+.youth-program>.youth-dock{grid-column:1/-1!important;grid-row:3!important;position:static!important;justify-self:end!important;align-self:center!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;flex-wrap:wrap!important;width:auto!important;max-width:100%!important;height:auto!important;min-height:0!important;margin:4px 0 0!important;padding:0!important;gap:14px!important;background:transparent!important;border:0!important;box-shadow:none!important;overflow:visible!important}
+.youth-program>.youth-dock img,.youth-program>.youth-dock img:first-child,.youth-program>.youth-dock img:nth-child(2),.youth-program>.youth-dock img:nth-child(3){display:block!important;position:static!important;transform:none!important;box-sizing:border-box!important;height:76px!important;width:auto!important;max-width:170px!important;object-fit:contain!important;background:#fff!important;border-radius:10px!important;padding:7px!important;box-shadow:0 5px 15px #0005!important}
+.youth-program>.youth-dock img:nth-child(3){height:94px!important;max-width:130px!important}
+.congreso-countdown{display:inline-flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:15px;padding:9px 13px;border:1px solid #ffffff80;border-radius:9px;background:#080b10b8;color:#fff;line-height:1.25;font-size:14px}
+.congreso-countdown span{font-weight:800;letter-spacing:.08em;color:#ff4a9b}
+.congreso-countdown strong{font-weight:800;font-size:clamp(14px,1.3vw,19px);font-variant-numeric:tabular-nums}
+@media(max-width:700px){.home-screen:not([hidden]){grid-template-rows:minmax(520px,auto) auto!important}.youth-hero{min-height:520px!important}.youth-program{grid-template-columns:1fr!important;gap:14px!important;padding:16px!important}.youth-program>.icea-attendance-wrap{grid-column:1!important;grid-row:1!important}.youth-program>.youth-program-heading{grid-column:1!important;grid-row:2!important}.youth-program>.youth-events{grid-column:1!important;grid-row:3!important}.youth-program>.youth-dock{grid-column:1!important;grid-row:4!important;justify-self:center!important;justify-content:center!important}.youth-program>.youth-dock img,.youth-program>.youth-dock img:first-child,.youth-program>.youth-dock img:nth-child(2){height:56px!important;max-width:110px!important}.youth-program>.youth-dock img:nth-child(3){height:70px!important;max-width:100px!important}.congreso-countdown{max-width:100%;font-size:12px}}
+</style>
 </head><body>
 
 <div class="layout"><aside class="sidebar" aria-label="Navegación del congreso"><div class="side-label">EXPLORA EL CONGRESO</div><nav id="side-nav"><a href="#inicio" data-view="inicio"><span>Inicio</span></a><a href="#ponencias" data-view="ponencias"><span>Ponencias</span></a><a href="#carteles" data-view="carteles"><span>Carteles científicos</span></a><a href="#talleres" data-view="talleres"><span>Talleres</span></a><a href="#agenda" data-view="agenda"><span>Mi Agenda <i id="count">0</i></span></a><a href="#constancias" data-view="constancias"><span>Constancias</span></a></nav></aside>
@@ -49,6 +67,7 @@
   <div class="youth-title"><span class="youth-number">1er</span><h1>CONGRESO DE<br>ESTUDIANTES DE<br><em>ADMINISTRACIÓN</em></h1></div>
   <p class="youth-topic">Emprendimiento <span>✳</span> Innovación <span>✳</span> Competitividad</p>
   <p class="youth-tagline">Las ideas que transforman empiezan contigo.</p>
+  <div class="congreso-countdown" role="timer" aria-label="Cuenta regresiva al inicio del congreso"><span>FALTAN</span><strong id="congreso-countdown-value">Calculando…</strong></div>
  </div>
  <img class="youth-student" src="assets/estudiante-lona-oficial.png" alt="Estudiante del material gráfico oficial del Congreso">
  <div class="youth-mark">IDEAS EN MOVIMIENTO <span>↗</span></div>
@@ -62,7 +81,8 @@
   <article class="youth-event"><div class="youth-event-top"><span>MAGISTRAL 02</span><time>29 OCT · 16:00 H</time></div><h2>Sigue haciendo bien lo que haces y quebrarás tu negocio</h2><p>MA. Raúl Macías</p></article>
  </div>
 </div>
-<div class="youth-dock" aria-label="Reconocimientos institucionales"><img src="assets/caceca.jpeg" alt="CACECA"><img src="assets/aice.png" alt="AICE"><img src="assets/65-aniversario-dorado.png" alt="65 aniversario"></div>
+
+ <div class="youth-dock" aria-label="Reconocimientos institucionales"><img src="assets/caceca.jpeg" alt="CACECA"><img src="assets/aice.png" alt="AICE"><img src="assets/65-aniversario-dorado.png" alt="65 aniversario"></div>
 </section>
 <section class="page inner general-program" data-page="programa-general" hidden>
 <div class="section-eyebrow">29 Y 30 DE OCTUBRE DE 2026</div><h1>Programa general</h1><p class="section-intro">Consulta las actividades institucionales, el foro y las conferencias magistrales del Congreso.</p>
@@ -99,4 +119,4 @@
 </style>
 <script src="inscritos-talleres.js?v=27oct-final-2" defer></script>
 <script src="app.js?v=27oct-final-2" defer></script>
-</body></html>
+<script id="icea-contador-28oct">(function(){const value=document.getElementById('congreso-countdown-value');if(!value)return;const start=Date.parse('2026-10-29T09:00:00-06:00');function update(){const remaining=Math.max(0,start-Date.now());if(remaining===0){value.textContent='¡EL CONGRESO HA COMENZADO!';return;}const d=Math.floor(remaining/86400000),h=Math.floor(remaining%86400000/3600000),m=Math.floor(remaining%3600000/60000),s=Math.floor(remaining%60000/1000);value.textContent=(d?d+' d · ':'')+String(h).padStart(2,'0')+' h · '+String(m).padStart(2,'0')+' min · '+String(s).padStart(2,'0')+' s';}update();setInterval(update,1000)})();</script></body></html>
