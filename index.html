@@ -65,7 +65,21 @@
 .home-screen>.youth-program{grid-row:2!important;padding-bottom:18px!important;overflow:visible!important}
 @media(max-width:700px){.home-screen>.youth-dock{justify-content:center!important;gap:12px!important;flex-wrap:wrap!important;padding:15px!important;min-height:0!important}.home-screen>.youth-dock img,.home-screen>.youth-dock img:first-child,.home-screen>.youth-dock img:nth-child(2){height:60px!important;max-height:60px!important;max-width:125px!important}.home-screen>.youth-dock img:nth-child(3){height:75px!important;max-height:75px!important;max-width:110px!important}}
 </style>
-</head><body>
+<style id="icea-constancias-2026">
+.icea-cert-controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px;padding:18px;background:#f7f7f9;border:1px solid #e5e3e9;border-radius:14px;margin:22px 0}
+.icea-cert-controls label{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:800;color:#25212a}
+.icea-cert-controls input,.icea-cert-controls select{width:100%;box-sizing:border-box;background:#fff;color:#18131d;border:1px solid #cfcbd3;border-radius:8px;padding:13px;font:inherit;font-weight:500}
+.icea-cert-count{color:#d6005c;font-weight:800;margin:14px 0}
+.icea-cert-list{display:grid;gap:12px}
+.icea-cert-item{border:1px solid #e6e3e8;border-left:5px solid #e60063;background:white;color:#1b1720;border-radius:11px;padding:19px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center}
+.icea-cert-label{font-size:12px;font-weight:800;color:#cf005a;text-transform:uppercase;letter-spacing:.04em}
+.icea-cert-item h3{font-size:18px;margin:8px 0;line-height:1.35}
+.icea-cert-authors{font-size:14px;color:#504a55;line-height:1.55;white-space:pre-line}
+.icea-cert-download{background:#e60063;color:white!important;text-decoration:none!important;padding:13px 18px;border-radius:9px;font-weight:800;white-space:nowrap;text-align:center}
+.icea-cert-download:hover{background:#bd0051}
+.icea-cert-note{margin:24px 0;font-size:14px;color:#666}
+@media(max-width:760px){.icea-cert-controls{grid-template-columns:1fr}.icea-cert-item{grid-template-columns:1fr}.icea-cert-download{display:block}}
+</style></head><body>
 
 <div class="layout"><aside class="sidebar" aria-label="Navegación del congreso"><div class="side-label">EXPLORA EL CONGRESO</div><nav id="side-nav"><a href="#inicio" data-view="inicio"><span>Inicio</span></a><a href="#ponencias" data-view="ponencias"><span>Ponencias</span></a><a href="#carteles" data-view="carteles"><span>Carteles científicos</span></a><a href="#talleres" data-view="talleres"><span>Talleres</span></a><a href="#agenda" data-view="agenda"><span>Mi Agenda <i id="count">0</i></span></a><a href="#constancias" data-view="constancias"><span>Constancias</span></a></nav></aside>
 <main id="main-content"><section class="page home-screen" data-page="inicio" aria-label="Inicio del Congreso">
@@ -102,7 +116,15 @@
 <div id="general-results" class="general-results"></div></section>
 <section class="page inner" data-page="programa" hidden><div class="section-eyebrow" id="category-eyebrow">PROGRAMA ACADÉMICO</div><h1 id="category-title">Ponencias</h1><p id="category-desc" class="section-intro"></p><div id="poster-location" class="poster-location" hidden><div class="poster-location-heading">Sede de los carteles científicos</div><p id="poster-location-detail" hidden></p></div><div id="cartel-mesas-nav" class="cartel-mesas-nav" hidden></div><div id="workshop-capacity-banner" hidden role="status">CUPO LLENO <span>Inscripciones cerradas en los 14 talleres</span></div><div class="filters"><label>Buscar en esta sección<input id="search" type="search" placeholder="Título, autor, folio, tema…"></label><label id="day-label">Fecha<select id="day"><option value="">Ambos días</option><option value="2026-10-29">29 de octubre</option><option value="2026-10-30">30 de octubre</option></select></label><label id="mesa-label">Mesa temática<select id="mesa"><option value="">Todas las mesas</option></select></label></div><p class="result-count" id="result-line"></p><div id="results"></div></section>
 <section class="page inner" data-page="agenda" hidden><div class="section-eyebrow">ORGANIZA TU VISITA</div><h1>Mi Agenda <span id="agenda-count"></span></h1><p class="section-intro">Guarda las actividades que te interesan. Tu selección permanece en este navegador.</p><div id="agenda-results"></div></section>
-<section class="page inner" data-page="constancias" hidden><div class="section-eyebrow">INFORMACIÓN PARA PARTICIPANTES</div><h1>Constancias</h1><p class="section-intro">Este apartado se habilitará cuando se proporcione la información oficial para su consulta.</p></section>
+<section class="page inner" data-page="constancias" hidden>
+<div class="section-eyebrow">1ER CONGRESO DE ESTUDIANTES DE ADMINISTRACIÓN</div>
+<h1>Consulta tus constancias</h1>
+<p class="section-intro">Busca tu trabajo por título, folio o nombre de autor. Las constancias disponibles corresponden a ponencias y carteles científicos.</p>
+<div class="icea-cert-controls"><label>Buscar constancia<input id="icea-cert-search" type="search" placeholder="Nombre, título o folio…"></label><label>Tipo de participación<select id="icea-cert-type"><option value="">Todas</option><option value="Ponencia">Ponencias</option><option value="Cartel">Carteles científicos</option></select></label><label>Mesa<select id="icea-cert-mesa"><option value="">Todas las mesas</option><option value="Mesa 1">Mesa 1</option><option value="Mesa 2">Mesa 2</option><option value="Mesa 3">Mesa 3</option></select></label></div>
+<p id="icea-cert-count" class="icea-cert-count" aria-live="polite"></p>
+<div id="icea-cert-list" class="icea-cert-list"></div>
+<p class="icea-cert-note">Si tu trabajo no aparece, su constancia todavía no está incluida entre los archivos proporcionados.</p>
+</section>
 <footer><strong>1er Congreso de Estudiantes de Administración</strong><span>“Emprendimiento, Innovación y Competitividad”</span></footer></main></div>
 <dialog id="detail"><button id="close" aria-label="Cerrar" class="close">×</button><div id="detail-body"></div></dialog>
 <style>
@@ -130,4 +152,19 @@
 </style>
 <script src="inscritos-talleres.js?v=27oct-final-2" defer></script>
 <script src="app.js?v=27oct-final-2" defer></script>
-<script id="icea-contador-28oct">(function(){const value=document.getElementById('congreso-countdown-value');if(!value)return;const start=Date.parse('2026-10-29T09:00:00-06:00');function update(){const remaining=Math.max(0,start-Date.now());if(remaining===0){value.textContent='¡EL CONGRESO HA COMENZADO!';return;}const d=Math.floor(remaining/86400000),h=Math.floor(remaining%86400000/3600000),m=Math.floor(remaining%3600000/60000),s=Math.floor(remaining%60000/1000);value.textContent=(d?d+' d · ':'')+String(h).padStart(2,'0')+' h · '+String(m).padStart(2,'0')+' min · '+String(s).padStart(2,'0')+' s';}update();setInterval(update,1000)})();</script></body></html>
+<script id="icea-contador-28oct">(function(){const value=document.getElementById('congreso-countdown-value');if(!value)return;const start=Date.parse('2026-10-29T09:00:00-06:00');function update(){const remaining=Math.max(0,start-Date.now());if(remaining===0){value.textContent='¡EL CONGRESO HA COMENZADO!';return;}const d=Math.floor(remaining/86400000),h=Math.floor(remaining%86400000/3600000),m=Math.floor(remaining%3600000/60000),s=Math.floor(remaining%60000/1000);value.textContent=(d?d+' d · ':'')+String(h).padStart(2,'0')+' h · '+String(m).padStart(2,'0')+' min · '+String(s).padStart(2,'0')+' s';}update();setInterval(update,1000)})();</script><script src="constancias/catalogo.js?v=20261111"></script>
+<script id="icea-constancias-render">
+(function(){
+const list=document.getElementById('icea-cert-list'),search=document.getElementById('icea-cert-search'),type=document.getElementById('icea-cert-type'),mesa=document.getElementById('icea-cert-mesa'),count=document.getElementById('icea-cert-count');
+if(!list)return;
+const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function render(){
+const q=(search.value||'').toLocaleLowerCase('es').trim();
+const rows=(window.ICEA_CONSTANCIAS||[]).filter(x=>(!type.value||x.tipo===type.value)&&(!mesa.value||x.mesa===mesa.value)&&(!q||[x.folio,x.titulo,x.autores,x.mesa].join(' ').toLocaleLowerCase('es').includes(q)));
+count.textContent=rows.length+' constancias disponibles';
+list.innerHTML=rows.length?rows.map(x=>'<article class="icea-cert-item"><div><div class="icea-cert-label">'+esc(x.tipo==='Cartel'?'Cartel científico':'Ponencia')+' · '+esc(x.mesa)+' · '+esc(x.folio)+'</div><h3>'+esc(x.titulo)+'</h3><div class="icea-cert-authors">'+esc(x.autores)+'</div></div><a class="icea-cert-download" href="'+encodeURI(x.archivo)+'" target="_blank" rel="noopener" download>Descargar PDF ↗</a></article>').join(''):'<p>No hay constancias que coincidan con la búsqueda.</p>';
+}
+[search,type,mesa].forEach(x=>x.addEventListener(x===search?'input':'change',render));
+render();
+})();
+</script></body></html>
